@@ -4,6 +4,8 @@ var http = IMPORTS.require("http");
 /**
  * Service requests webpage at the address <logout.>
  * According to NS / T-Mobile info this is enough to log out from their hotspot.
+ *
+ * NOTE: Does not work as NodeJS does not accept such a string as URL.
  * 
  * Can be tested via CLI: luna-send -P -n 1 palm://nl.sinds1984.hotspot.service/logout '{}'
  */
