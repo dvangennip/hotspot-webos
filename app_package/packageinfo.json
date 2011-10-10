@@ -1,0 +1,12 @@
+{
+  "id": "nl.sinds1984.hotspot",
+  "package_format_version": 2,
+  "loc_name": "NS Hotspot Package",
+  "version": "0.9.4",
+  "icon": "icon-normal.png",
+  "miniicon": "icon-mini.png",
+  "vendor": "Sinds1984",
+  "vendorurl": "http://www.sinds1984.nl/",
+  "app": "nl.sinds1984.hotspot",
+  "services": ["nl.sinds1984.hotspot.service"]
+}

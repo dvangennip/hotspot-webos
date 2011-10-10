@@ -1,0 +1,102 @@
+/*
+   Extends the global iconography stylesheet
+*/
+
+/* Width override for Mojo on TouchPad */
+
+body.body-connect {
+  /*background: url(../images/background-small.png) center center no-repeat;*/
+}
+
+body.body-connect.tablet {
+  background: url(../images/background-large.png) center center no-repeat;
+}
+
+#content_wrapper.tablet {
+  display: block;
+  margin: 0 auto;
+  max-width: 510px;
+}
+
+.palm-page-header-tablet {
+  display: block;
+  height: 54px;
+  background: url(../images/palm-page-header-tablet.png) 0 0 repeat;
+}
+
+.palm-page-header-wrapper-tablet {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.palm-page-header-wrapper-tablet > .icon {
+  display: none;
+}
+
+.palm-page-header-wrapper-tablet > .title {
+  padding: 14px 0 0 0;
+  color: #333333;
+}
+
+/* Menu styling etc. */
+
+.palm-scrim.menu-usable {
+  z-index: 1;
+}
+
+.palm-body-text.first {
+  margin-top: 10px;
+}
+
+#connect_wifi_icon {
+  display: block;
+  float: left;
+  width: 32px;
+  margin: 14px -20px 0 12px;
+  background: url(../images/connect-icons.png) 0 0 no-repeat;
+}
+
+#connect_wifi_icon.none { }
+
+#connect_wifi_icon.poor {
+  background-position: 0px -50px;
+}
+
+#connect_wifi_icon.fair {
+  background-position: 0px -100px;
+}
+
+#connect_wifi_icon.excellent {
+  background-position: 0px -150px;
+}
+
+#connect_wifi_icon.error {
+  background-position: 0px -198px;
+}
+
+#connect_wifi_title {
+  /*float: left;*/
+}
+
+.response-text {
+  /*display: none;*/
+  background: url(../images/feedback-warning.png) 0 0 no-repeat;
+  margin: 15pt;
+  padding-left: 40px;
+  font-size: 14pt;
+  font-weight: bold;
+  min-height: 30px;
+}
+
+/* Overall iconography */
+
+.palm-account-icon.hotspot {
+  background: url(../images/icon-small.png) center center no-repeat;
+}
+.palm-account-icon.hotspot.medium {
+  background: url(../images/icon-medium.png) center center no-repeat;
+}
+
+.palm-menu-icon.connect-scene { background-image: url(../images/menu-icon-connect.png); }
+.palm-menu-icon.help-scene { background-image: url(../images/menu-icon-help.png); }

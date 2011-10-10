@@ -1,0 +1,23 @@
+{
+    "id": "nl.sinds1984.hotspot.service",
+    "description": "Hotspot Info Service",
+    "activityTimeout" : 15,
+    "services": [
+        {
+            "name": "nl.sinds1984.hotspot.service",
+            "description": "hotspot info",
+            "commands": [
+                {
+                    "name": "route",
+                    "assistant": "RouteCommandAssistant",
+                    "public": true
+                },
+                {
+                    "name": "logout",
+                    "assistant": "LogoutCommandAssistant",
+                    "public": true
+                }
+            ]
+        }
+    ]
+}

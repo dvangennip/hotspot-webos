@@ -1,0 +1,38 @@
+{
+  "id":"nl.sinds1984.hotspot",
+  "version":"0.9.4",
+  "title":"NS Hotspot",
+  "main":"index.html",
+  "icon":"images/icon-normal.png",
+  "smallicon": "images/icon-medium.png",
+  "miniicon":"images/icon-mini.png",
+  "splashicon":"images/icon-big.png",
+  "type":"web",
+  "theme":"light",
+  "noWindow": false,
+  "noDeprecatedStyles": true,
+  "removable":true,
+  "vendor":"Sinds1984",
+  "vendorurl":"http://www.sinds1984.nl/",
+  "copyright": "© MIT license 2011, Sinds1984.nl",
+  "support": {
+      "url": "http://www.sinds1984.nl",
+      "email": {
+          "address": "webos@sinds1984.nl",
+          "subject": "Support NS Hotspot"
+      },
+      "resources": [
+          {
+              "type": "scene",
+              "label": "About NS Hotspot",
+              "sceneName": "help"
+          },
+          {
+              "type": "web",
+              "label": "Support website",
+              "url": "http://www.sinds1984.nl/"
+          }
+      ]
+  },
+  "uiRevision": 2
+}
