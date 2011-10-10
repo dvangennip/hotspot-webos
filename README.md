@@ -6,7 +6,7 @@ Just connect to the hotspot as usual. Your device will notify that a captive por
 When you experience difficulties it may be that your normal 3G gateway IP address was selected instead. Manually select another address by tapping the gateway IP address field (a list will appear) and try again. It may help to put your device in Aeroplane mode first to avoid such issues (your phone network connection will be turned off as well as the 3G connection). When connected, disable Aeroplane mode to restore a working phone connection.
 
 ###Installation
-One way is to get the source code and use the SDK tools to package it and then install it onto your webOS device. A bit cumbersome if you just want to use it. There is a simpler way using a custom feed in Preware. Open Preware and via its applicatie menu select *Manage Feeds*. Scroll to the bottom and add a new feed:
+One way is to get the source code and use the SDK tools to package it and then install it onto your webOS device. A bit cumbersome if you just want to use it. There is a simpler way using a custom feed in [Preware](http://www.preware.org/). Open Preware and via its applicatie menu select *Manage Feeds*. Scroll to the bottom and add a new feed:
 
 * Name: sinds1984
 * URL: http://project.sinds1984.nl/appfeed
@@ -21,14 +21,19 @@ Source code is available under a MIT style license, so you are free to do with i
 To my knowledge webOS has no simple API call to get the gateway IP address. Therefore a Node.js-based background service is used (as is usual on webOS 2+) to fetch results from the Linux *route -n* command. This command is not supported for third-party apps, hence the regular jailed Node.js environment has to be circumvened, now using the Homebrew run-js-framework. See the pm-script files and the service D-BUS file for specifics.
 
 ####Changelog
-######0.9.4
+
+#####0.9.4
 * Gateway info resets upon WiFi status refresh.
 * First try at auto-logout (unsuccessful).
-######0.9.3
+
+#####0.9.3
 * Changed way of selecting preferred gateway (10.x.x.x preferred).
-######0.9.2
+
+#####0.9.2
 * Selecting last gateway in list by default, added explanations.
-######0.9.1
+
+#####0.9.1
 * Adding post install script to enable better service access.
-######0.9.0
+
+#####0.9.0
 * First release, including TouchPad compatibility.
