@@ -18,6 +18,8 @@ Click on *Add Feed* and leave this screen. Preware will ask to refresh all feeds
 Source code is available under a MIT style license, so you are free to do with it as you desire. It would be kind (but not necessary) to let me know. Of course NS and T-Mobile are names belonging to their respective owners.
 
 ###Some coding notes
+It is a Mojo framework-based application and should work with webOS 2.0+ (Node.js services were not available in webOS 1).
+
 To my knowledge webOS has no simple API call to get the gateway IP address. Therefore a Node.js-based background service is used (as is usual on webOS 2+) to fetch results from the Linux *route -n* command. This command is not supported for third-party apps, hence the regular jailed Node.js environment has to be circumvened, now using the Homebrew run-js-framework. See the pm-script files and the service D-BUS file for specifics.
 
 ####Changelog
@@ -37,3 +39,7 @@ To my knowledge webOS has no simple API call to get the gateway IP address. Ther
 
 #####0.9.0
 * First release, including TouchPad compatibility.
+
+####Issues
+
+* There may be an issue when a 3G gateway interferes with the data the app receives. Enable Aeroplane mode temporarily when connecting to circumvene the issue.
