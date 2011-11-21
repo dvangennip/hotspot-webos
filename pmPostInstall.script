@@ -9,12 +9,12 @@ fi
 
 /bin/chmod -R 777 $SERVICES_PATH/scripts
 	
-#make directories in the rare event they don't exist
+#make directories in the rare event these do not exist
 /bin/mkdir -p /var/palm/ls2/services/prv
 /bin/mkdir -p /var/palm/ls2/services/pub
 	
 #copy dbus service file
-/bin/cp -f $SERVICES_PATH/dbus /var/palm/ls2/services/prv/$ID.service
-/bin/cp -f $SERVICES_PATH/dbus /var/palm/ls2/services/pub/$ID.service
+/bin/cp -f $SERVICES_PATH/dbus /var/palm/ls2/services/prv/$ID
+/bin/cp -f $SERVICES_PATH/dbus /var/palm/ls2/services/pub/$ID
 
 exit 0

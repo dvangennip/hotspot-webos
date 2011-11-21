@@ -9,7 +9,7 @@
 
 APPID=nl.sinds1984.hotspot
 
-# create bin directories if not yet existing
+# create bin directory if not yet existing
 /bin/mkdir bin
 
 # package everything
