@@ -25,6 +25,7 @@ To my knowledge webOS has no simple API call to get the gateway IP address. Ther
 ####Changelog
 
 #####0.9.4
+* Fixed regression in install scripts regarding permissions.
 * Gateway info resets upon WiFi status refresh.
 * First try at auto-logout (unsuccessful).
 
