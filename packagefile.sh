@@ -16,5 +16,5 @@ APPID=nl.sinds1984.hotspot
 palm-package --outdir=bin app_src app_package app_service
 
 # add script files to package
-/bin/ar q bin/${APPID}*.ipk pmPostInstall.script
-/bin/ar q bin/${APPID}*.ipk pmPreRemove.script
+/bin/ar -q bin/${APPID}*.ipk pmPostInstall.script
+/bin/ar -q bin/${APPID}*.ipk pmPreRemove.script

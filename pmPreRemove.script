@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ID=nl.sinds1984.hotspot.service
+SID=nl.sinds1984.hotspot.service
 
 #remount root using technique that won't cause the random remounting error
 if [ -z "$IPKG_OFFLINE_ROOT" ]; then
@@ -8,7 +8,7 @@ if [ -z "$IPKG_OFFLINE_ROOT" ]; then
 fi
 
 #remove dbus service file
-/bin/rm -f /var/palm/ls2/services/prv/$ID
-/bin/rm -f /var/palm/ls2/services/pub/$ID
+/bin/rm -f /var/palm/ls2/services/prv/$SID
+/bin/rm -f /var/palm/ls2/services/pub/$SID
 
 exit 0
