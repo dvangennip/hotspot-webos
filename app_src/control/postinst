@@ -14,8 +14,8 @@ fi
 /bin/mkdir -p /var/palm/ls2/services/pub
 
 # clean up old bad service files
-/bin/rm /var/palm/ls2/services/prv/$SID*
-/bin/rm /var/palm/ls2/services/pub/$SID*
+/bin/rm -f /var/palm/ls2/services/prv/$SID*
+/bin/rm -f /var/palm/ls2/services/pub/$SID*
 
 # copy dbus service file
 /bin/cp -f $SERVICES_PATH/dbus /var/palm/ls2/services/prv/$SID
