@@ -192,3 +192,6 @@ ConnectAssistant.prototype.updateGatewayInfo = function (success, optionalMessag
     this.controller.modelChanged(this.gatewayModel);
     this.controller.modelChanged(this.openButtonModel);
 };
+
+// this.webview_widget.mojo.setNetworkInterface(this.ifNameToUse); // 'eth0'
+// Host: www.nstrein.ns.nl

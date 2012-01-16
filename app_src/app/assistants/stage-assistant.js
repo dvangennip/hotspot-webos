@@ -117,8 +117,9 @@ StageAssistant.prototype.getGateways = function (callback) {
 	    // when there is no error get the gateway addresses from the response table
 	    if (!response.error) {
 		for (i = 0; i < response.table.length; i++) {
-		    if (response.table[i].flags.toLowerCase().indexOf('g') !== -1) {
-			// it is a gateway so add it
+		    Mojo.Log.info(JSON.stringify(response.table[i]));
+		    if (response.table[i].flags.toLowerCase().indexOf('g') !== -1 && response.table[i].iface.toLowerCase().indexOf('eth') !== -1) {
+			// it is a WiFi gateway so add it
 			gatewayArray[j] = {};
 			gatewayArray[j].value = response.table[i].gateway;
 			gatewayArray[j].label = response.table[i].gateway;

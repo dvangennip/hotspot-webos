@@ -77,9 +77,13 @@ RouteCommandAssistant.prototype = {
      * 
      * Kernel IP routing table
      * Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+     * 10.12.22.88     0.0.0.0         255.255.255.252 U     0      0        0 rmnet0
      * 10.0.2.0        0.0.0.0         255.255.255.0   U     0      0        0 eth0
      * 0.0.0.0         10.0.2.2        0.0.0.0         UG    0      0        0 eth0
      * 0.0.0.0         10.0.2.2        0.0.0.0         UG    30     0        0 eth0
+     *
+     * rmnet0 is for EDGE / 3G
+     * eth0 is for ethernet: wired and WiFi (wlan0 may show up for different devices?)
      */
     parseRouteTable: function (rawtable) {
         
