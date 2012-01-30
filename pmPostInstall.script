@@ -1,13 +1,13 @@
 #!/bin/sh
 
-ID=nl.sinds1984.hotspot.service
+SID=nl.sinds1984.hotspot.service
 SERVICES_PATH=/media/cryptofs/apps/usr/palm/services/$SID
 
 if [ -z "$IPKG_OFFLINE_ROOT" ]; then
 	/usr/sbin/rootfs_open -w
 fi
 
-/bin/chmod -R 777 $SERVICES_PATH/scripts
+/bin/chmod -R 777 $SERVICES_PATH/dbus
 	
 # make directories in the rare event these do not exist
 /bin/mkdir -p /var/palm/ls2/services/prv
@@ -22,6 +22,6 @@ fi
 /bin/cp -f $SERVICES_PATH/dbus /var/palm/ls2/services/pub/$SID
 
 # make system scan for services
-/usr/bin/ls-control scan-services || true
+#/usr/bin/ls-control scan-services || true
 
 exit 0

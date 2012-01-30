@@ -24,6 +24,13 @@ To my knowledge webOS has no simple API call to get the gateway IP address. Ther
 
 ####Changelog
 
+#####0.9.6
+* Corrected a typo which derailed the pmPostInstall script.
+* Used Ubuntu for packaging instead of webOS (easier, not necessarily better).
+
+#####0.9.5
+* Revised the pmPostInstall and pmPreRemove scripts.
+
 #####0.9.4
 * Fixed regression in install scripts regarding permissions.
 * Gateway info resets upon WiFi status refresh.
