@@ -22,6 +22,6 @@ fi
 /bin/cp -f $SERVICES_PATH/dbus /var/palm/ls2/services/pub/$SID
 
 # make system scan for services
-#/usr/bin/ls-control scan-services || true
+/usr/bin/ls-control scan-services || true
 
 exit 0
